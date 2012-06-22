@@ -1,0 +1,1 @@
+define(["text!tmpl/search.html"],function(a){return console.log("am running",a),{}})
