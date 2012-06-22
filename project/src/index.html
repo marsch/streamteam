@@ -9,6 +9,7 @@
 
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
 
         <script language="javascript" src="libs/jquery.js"></script>
         <script language="javascript" src="libs/underscore.js"></script>
@@ -20,10 +21,10 @@
         <script language="javascript" src="libs/require.js"></script>
 
         <script language="javascript" src="dev/sinon.js"></script>
+        <script language="javascript" src="dev/fakeserver.js"></script>
         <script language="javascript">
-            require(['dev/fakeserver', 'app/main'], function (fakeserver, app) {
-
-
+            require(['app/main'], function (app) {
+                console.log('should runn');
             });
         </script>
 
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="main" class="container">
 
         </div> <!-- /container -->
     </body>
